@@ -6,15 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class activity_profil extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_profil);
     }
-    public void clickProvider(View view) {
-        Intent intent = new Intent(MainActivity.this, activity_login.class);
+    public void backregis(View view) {
+        Intent intent = new Intent(activity_profil.this,activity_register.class);
         startActivity(intent);
     }
 }

@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="48dp"
         android:fontFamily="@font/futura_pt_demibold"
-        android:text="Welcome Back"
+        android:text="Continuing as"
         android:textColor="#313131"
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -49,78 +49,125 @@
         android:layout_marginLeft="48dp"
         android:layout_marginTop="50dp"
         android:fontFamily="@font/futura_pt_demibold"
-        android:text="at largest Servies marketplace"
+        android:text="Service Provider"
         android:textColor="#313131"
-        android:textSize="20sp"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.617" />
 
-
-    <TextView
-        android:id="@+id/sign_in"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/futura_pt_demibold"
-        android:text="User as a"
-        android:textColor="#9b9b9b"
-        android:textSize="19sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textWelcome2" />
-
     <Button
-
-        android:layout_width="284dp"
-        android:layout_height="38dp"
+        android:id="@+id/btn_register"
+        android:layout_width="142dp"
+        android:layout_height="39dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="48dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/btn_red_large"
         android:fontFamily="@font/futura_pt_demibold"
-        android:text="User"
+        android:text="Register"
+        android:onClick="register"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.895"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textWelcome" />
+        app:layout_constraintTop_toBottomOf="@id/textWelcome2" />
 
     <Button
-        android:id="@+id/btn_prov"
-        android:layout_width="284dp"
-        android:layout_height="38dp"
+        android:id="@+id/btn_login"
+        android:layout_width="112dp"
+        android:layout_height="41dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="48dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/btn_white_large"
         android:fontFamily="@font/futura_pt_demibold"
 
         android:onClick="clickProvider"
-        android:text="service provider"
+        android:text="Login"
         android:textAllCaps="false"
         android:textColor="#FF0000"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.127"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textWelcome" />
 
-    <TextView
-        android:id="@+id/guest"
+
+    <Button
+        android:id="@+id/btn_google"
+        android:layout_width="272dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_white_large"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Continue With Google"
+        android:textAllCaps="false"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_login"
+        app:layout_constraintVertical_bias="0.007" />
+
+    <Button
+        android:id="@+id/btn_fb"
+        android:layout_width="272dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_white_large"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Continue With Faceook"
+        android:textAllCaps="false"
+        android:textColor="#000080"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_google"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/ggl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="112dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/futura_pt_demibold"
-        android:text="Enter as a guest"
-        android:textColor="#9b9b9b"
-        android:textSize="20sp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="60dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/google_logo"
+        app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_prov" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_login"
+        app:layout_constraintTop_toTopOf="@id/btn_login"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/fbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="108dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/fb_logo"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_login"
+        app:layout_constraintTop_toTopOf="@id/btn_login"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
